@@ -2,24 +2,25 @@
 
 ## JH: v1.0 - Weather Underground to pwsweather.com script test
 
-WORKINGDIR=/home/ABC123
+WORKINGDIR=/tmp/wu-pws
+mkdir -p $WORKINGDIR
 
 # Wunderground API key
 # Register for a free Stratus plan here: https://www.wunderground.com/weather/api
-WUAPI={your weather underground API key - no braces}
+#WUAPI={your weather underground API key - no braces}
 
 # Wunderground PWS to pull weather from
 # Navigate to your preferred weather station on Weather Underground and pull the pws:XXXXXXXXXX from the URL
 # ex. https://www.wunderground.com/cgi-bin/findweather/getForecast?query=pws:KFLLAKEW61&MR=1
 # ex. WUPWS would be the query value - "pws:KFLLAKEW61"
 #WUPWS="pws:KFLLAKEW53"
-WUPWS={"your weather underground station identifier - no braces - yes quotes"}
+#WUPWS={"your weather underground station identifier - no braces - yes quotes"}
 
 #PWS station ID - sign up and create a station at pwsweather.com
-PWSID={your pwsweather.com station ID}
+#PWSID={your pwsweather.com station ID}
 
 #PWS password - password for pwsweather.com
-PWSPASS={your pwsweather.com password}
+#PWSPASS={your pwsweather.com password}
 
 #============================================================
 #=
@@ -106,4 +107,3 @@ mv $WORKINGDIR/wu.json.3 $WORKINGDIR/wu.json.4
 mv $WORKINGDIR/wu.json.2 $WORKINGDIR/wu.json.3
 mv $WORKINGDIR/wu.json.1 $WORKINGDIR/wu.json.2
 mv $WORKINGDIR/wu.json $WORKINGDIR/wu.json.1
-

@@ -1,3 +1,5 @@
+This fork was created to build a Docker image for this script.  All variables listed below should be set by your environment.
+
 # wupws
 simple shell script that parses current observations from a weather underground station and posts to pwsweather.com.  Needed so Rachio smart irrigation controller can use nearby weather underground data to adjust watering schedule.
 
